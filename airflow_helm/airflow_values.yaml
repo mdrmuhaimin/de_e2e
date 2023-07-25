@@ -1,0 +1,18 @@
+createUserJob:
+  useHelmHooks: false
+  applyCustomEnv: false
+migrateDatabaseJob:
+  useHelmHooks: false
+  applyCustomEnv: false
+executor: "KubernetesExecutor"
+
+defaultAirflowRepository: airflow-custom
+# Default airflow tag to deploy
+defaultAirflowTag: "latest"
+airflowVersion: "2.4.2"
+
+env:
+  - name: "KAGGLE_USERNAME"
+    value: "mdrmuhaimin"
+  - name: "KAGGLE_KEY"
+    value: "Please use your key"
